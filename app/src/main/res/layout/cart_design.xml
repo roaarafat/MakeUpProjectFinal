@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cartItem">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageItem"
+        android:src="@drawable/ha"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/pink"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:id="@+id/titleItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/imageItem"
+        android:layout_margin="10dp"
+        android:text="bglxhsuhtlilab blehstj slthe"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+    <RatingBar
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageItem"
+        android:layout_below="@id/titleItem"
+        android:numStars="5"
+        android:rating="4"
+        android:stepSize="@integer/material_motion_duration_medium_1"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/price"
+        android:text="50"
+        android:textColor="@color/red_light"
+        android:layout_below="@id/rating"
+        android:layout_toRightOf="@id/imageItem"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pricerr"
+        android:text="+ vat 70 sar"
+        android:textColor="@color/red_light"
+        android:layout_below="@id/rating"
+        android:layout_alignParentRight="true"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:id="@+id/btn_ok"
+        android:text="Ok"
+        android:backgroundTint="@color/pink"
+        android:textColor="@color/white"
+        android:layout_below="@id/price"
+        android:layout_toRightOf="@id/imageItem"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/btn_cancel"
+        android:text="Delete"
+        android:backgroundTint="@color/pink2"
+        android:textColor="@color/white"
+        android:layout_below="@id/pricerr"
+        android:layout_alignParentRight="true"
+        android:textSize="20sp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="10dp"/>
+
+</RelativeLayout>

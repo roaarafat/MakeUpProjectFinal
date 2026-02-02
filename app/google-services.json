@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "625790657476",
+    "project_id": "makeup-3803c",
+    "storage_bucket": "makeup-3803c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:625790657476:android:7fcecc7e4f26ec2db67a91",
+        "android_client_info": {
+          "package_name": "com.example.makeupproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCq6tHvmwB_3cOBJUsQAXe6fhdQHavwG_U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
