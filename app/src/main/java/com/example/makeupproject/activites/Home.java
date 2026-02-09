@@ -2,6 +2,7 @@ package com.example.makeupproject.activites;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.GridView;
@@ -49,6 +50,14 @@ public class Home extends AppCompatActivity {
         cart.setOnClickListener(v -> {
             Intent intent =new Intent(Home.this, Cart.class);
             startActivity(intent);
+        });
+        ImageView searchimage=findViewById(R.id.search);
+        searchimage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent =new Intent(Home.this, Search.class);
+                startActivity(intent);
+            }
         });
         productList=new ArrayList<>();
         productList.add(new Grade("Lipstick",R.drawable.lf));
